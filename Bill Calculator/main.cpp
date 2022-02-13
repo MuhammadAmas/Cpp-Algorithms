@@ -1,13 +1,11 @@
 #include <iostream>
 using namespace std;
 int main(){
-    float rate1, rate2,rate3,rate4, units, bill;
-    rate1 = 9.35;
-    rate2 = 11.67;
-    rate3=13.76;
-    rate4=22.88;
+    float rate1, rate2, rate3, rate4, units, bill;
     
-    cout<<"Enter Units = ";
+    rate1 = 9.35, rate2 = 11.67, rate3 = 13.76, rate4 = 22.88;
+    
+    cout<<"Enter the number of units used: ";
     cin>>units;
     if (units < 100){
         bill = units * rate1;
