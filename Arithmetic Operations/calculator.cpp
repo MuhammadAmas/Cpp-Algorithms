@@ -33,7 +33,7 @@ class complexnumber{
         imaginarypart = this->imaginarypart * secondnumber.imaginarypart;
         return complexnumber(realpart, imaginarypart);
     }
-    complexnumber operator+(complexnumber secondnumber){ //Addition Method
+    complexnumber operator+(complexnumber secondnumber){ //operator overloading
     realpart = this->realpart + secondnumber.realpart;
     imaginarypart = this->imaginarypart + secondnumber.imaginarypart;
     return complexnumber(realpart, imaginarypart);
@@ -54,7 +54,7 @@ int main(){
     c6.display();
 
    //Operator overloading
-   complexnumber c7 = c1 + c2; //doing operator overloading
+   complexnumber c7 = c2 + c1; //doing operator overloading
    c7.display();
     return 0;
 }
