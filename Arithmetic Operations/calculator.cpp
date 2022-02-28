@@ -33,6 +33,13 @@ class complexnumber{
         imaginarypart = this->imaginarypart * secondnumber.imaginarypart;
         return complexnumber(realpart, imaginarypart);
     }
+    complexnumber operator+(complexnumber secondnumber){ //Addition Method
+    realpart = this->realpart + secondnumber.realpart;
+    imaginarypart = this->imaginarypart + secondnumber.imaginarypart;
+    return complexnumber(realpart, imaginarypart);
+    }
+    ~complexnumber(){ //Destructor
+    }
 };
 int main(){
     complexnumber c1; //invoking the Null constructor
@@ -45,5 +52,9 @@ int main(){
     c5.display();
     complexnumber c6 = c1.multiplication(c2); //invoking the multiplication method
     c6.display();
+
+   //Operator overloading
+   complexnumber c7 = c1 + c2; //doing operator overloading
+   c7.display();
     return 0;
 }
